@@ -1,0 +1,177 @@
+/* ==========================
+   Google Font
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    min-height:100vh;
+}
+
+/* ==========================
+   Card
+========================== */
+
+.card{
+    border-radius:15px;
+    overflow:hidden;
+    border:none;
+}
+
+.card-header{
+    padding:20px;
+}
+
+.card-header h2,
+.card-header h4{
+    font-weight:600;
+    margin:0;
+}
+
+/* ==========================
+   Labels
+========================== */
+
+label{
+    font-weight:600;
+    color:#333;
+}
+
+/* ==========================
+   Inputs
+========================== */
+
+.form-control{
+    height:50px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.form-control:focus{
+    box-shadow:0 0 10px rgba(13,110,253,.25);
+}
+
+/* ==========================
+   Error Messages
+========================== */
+
+small{
+    display:block;
+    margin-top:5px;
+    font-size:14px;
+    font-weight:500;
+    min-height:20px;
+}
+
+/* ==========================
+   Success & Error Border
+========================== */
+
+.success{
+    border:2px solid #198754 !important;
+}
+
+.error{
+    border:2px solid #dc3545 !important;
+}
+
+/* ==========================
+   Button
+========================== */
+
+.btn{
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   Table
+========================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table th{
+    vertical-align:middle;
+    white-space:nowrap;
+}
+
+.table td{
+    vertical-align:middle;
+}
+
+/* ==========================
+   Action Buttons
+========================== */
+
+.edit-btn{
+    margin-right:8px;
+}
+
+/* ==========================
+   Empty Table Message
+========================== */
+
+.empty-message{
+    text-align:center;
+    color:gray;
+    padding:20px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px){
+
+    .card-header h2{
+        font-size:24px;
+    }
+
+    .card-header h4{
+        font-size:20px;
+    }
+
+    .btn{
+        width:100%;
+        margin-bottom:8px;
+    }
+
+    .edit-btn{
+        margin-right:0;
+    }
+
+}
+
+@media(max-width:576px){
+
+    body{
+        padding:15px;
+    }
+
+    .card{
+        border-radius:10px;
+    }
+
+    .form-control{
+        height:45px;
+    }
+
+    .table{
+        font-size:14px;
+    }
+
+}
